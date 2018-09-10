@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EDITAR INSTRUCTOR</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/SEARCHBOX.css">
+<link href="css/BOTON.CSS" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="images/icons/crear.png">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #05D954;}
+#main {margin-left: 120px}
+body {background-image:url(images/fondo.jpg); background-size: cover}
+@media only screen and (max-width: 600px) {#main {margin-left: }}
+#titulo{ font-weight: bold;}
+</style>
+
+<body background="images/fondo.jpg"class="w3-border-green">
+
+    <!-- NAVEGATION BAR -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+
+      <a href ='Bienvenida admin.html'class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>Inicio</p>
+      </a>
+      <a href="Gestionar fichas.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-file w3-xxlarge"></i>
+        <p>Gestionar Ficha</p>
+      </a>
+
+      <a href="gestionar instructor.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>Gestionar Instructor</p>
+      </a>
+
+      <a href="ambientes consulta.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-refresh w3-xxlarge"></i>
+        <p>Gestionar Ambiente</p>
+      </a>
+
+      <a href="Gestionar horario.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-book w3-xxlarge"></i>
+        <p>Gestionar Horario</p>
+      </a>
+
+    </nav>
+      <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#gestionar fichas" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Fichas</a>
+        <a href="#gestionar instructor" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Instructor</a>
+        <a href="#gestionar ambientes" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Ambientes</a>
+        <a href="#gestionar horarios" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Horarios</a>
+      </div>
+    </div>
+
+  <div class="w3-padding-large" id="main">
+  <!-- GESTIONAR FICHAS-->
+  <header class="w3-container w3-padding-32 w3-center w3-transparent" id="Gestionar Fichas">
+    <b><h1 id="titulo">EDITAR INSTRUCTOR</h1></b><br><br>
+</header>
+
+<center>
+<div class="w3-padding-large" id="main">
+
+    <div>
+      <b>Nombres:</b>
+  <input type="text" name="Primer Nombre" value=" ">
+
+  <b>Apellidos:</b>
+  <input type="text" name="Primer Apellido" value=" ">
+
+<b>Tipo de Documento:</b>
+  <input type="button" value="Cedula de ciudadania" disabled style="background: #EF7317; width: 200px; color: black"/>
+  <br><br>
+
+<b>Número de Documento:</b>
+  <input type="button" value="123456789" disabled style="background: #EF7317; width: 200px; color: black"/>
+
+  <b>Correo Electrónico:</b>
+  <input type="text" name="numero de Documento" value=" ">
+
+  <b>Género:</b>
+  <input type="button" value="Masculino" disabled style="background: #EF7317; width: 170px; color: black"/>
+  <br><br>
+
+<b>Dirección:</b>
+  <input type="text" name="numero de Documento" value=" ">
+
+<b>Teléfono:</b>
+  <input type="text" name="numero de Documento" value=" ">
+
+  <b>Celular:</b>
+  <input type="text" name="numero de Documento" value=" "><br><br>
+
+<b>Estado:</b>
+  <select style="left:25%">
+  <option value="Selec">Seleccione</option><br><br>
+  <option value="saab">Activo</option>
+  <option value="opel">Retirado</option>
+  <option value="opel">Re Integro</option>
+</select>
+  
+  <b>Trabajo Antes Aquí:</b>
+  <select style="left:25%">
+  <option value="Selec">Seleccione</option><br><br>
+  <option value="saab">Si</option>
+  <option value="opel">No</option>
+</select><br><br>
+
+   <b>Novedades:</b><br>
+<form action="/action_page.php">
+  <textarea name="message" rows="3" cols="80" ></textarea>
+  <br><br>
+</form>
+<br><br>
+
+<form>
+  <input type="button" class="enjoy-css" value="EDITAR" style="width: 180px; height: 48px; left:-4%">
+<a href="Bienvenida admin.html">
+  <input type="button" class="enjoy-css" value="CANCELAR" style="width: 200px; height: 48px; left:5%">
+</form>
+
+</center>
+</div>
+</body>
+</html>

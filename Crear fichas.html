@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<title>Crear fichas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/icons/editar.png">
+<link href="css/BOTON.CSS" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/SEARCHBOX.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; color: black}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #05D954;}
+#main {margin-left: 120px}
+body {background-image:url(images/fondo.jpg); background-size: cover}
+@media only screen and (max-width: 600px) {#main {margin-left: }}
+#titulo{ font-weight: bold;
+}
+</style>
+
+<body background="images/fondo.jpg" class="w3-border-green">
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+
+<a href="Bienvenida admin.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <i class="fa fa-home w3-xxlarge"></i>
+  <p>Inicio</p>
+</a>
+<a href="Gestionar fichas.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <i class="fa fa-file-text w3-xxlarge"></i>
+  <p>Gestionar Ficha</p>
+</a>
+<a href="gestionar instructor.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <i class="fa fa-user w3-xxlarge"></i>
+  <p>Gestionar Instructor</p>
+</a>
+<a href="ambientes gestion.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <i class="fa fa-refresh w3-xxlarge"></i>
+  <p>Gestionar Ambiente</p>
+</a>
+<a href="Gestionar horario.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <i class="fa fa-book w3-xxlarge"></i>
+  <p>Gestionar Horario</p>
+</a>
+</nav>
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#gestionar fichas" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Fichas</a>
+    <a href="#gestionar instructor" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Instructor</a>
+    <a href="#gestionar ambientes" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Ambientes</a>
+    <a href="#gestionar horarios" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Horarios</a>
+  </div>
+</div>
+
+<div class="w3-padding-large" id="main">
+
+<header class="w3-container w3-padding-32 w3-center w3-transparent" id="Gestionar Fichas">
+  <center><h1 id="titulo">CREAR FICHAS</h1></center>
+</header>
+</div>
+
+<center><div>
+<form action="/action_page.php">
+  Número de Ficha:
+<input required type="text" name="Número de Ficha">
+
+  Jornada:
+<select required>
+  <option value="">Seleccione</option><br><br>
+  <option value="saab">Diurna</option>
+  <option value="opel">Nocturna</option>
+  <option value="audi">Fines de semana</option>
+</select> 
+<br><br><br>
+
+  Cantidad Aprendices:
+<input required type="text" name="Cantidad de Aprendices">
+
+  Sede:
+<select required>
+  <option value="">Seleccione</option><br><br>
+  <option value="saab">Diseño y Metrologia</option>
+  <option value="opel">Ceet</option>
+  <option value="audi">Talento humano en salud</option>
+  <option value="opel">Gestion Administrativa</option>
+  <option value="opel">Gestion de mercados,logistica y tic's</option>
+  <option value="opel">Gestion industrial</option>
+  <option value="opel">Formacion en actividad fisica y cultura</option>
+  <option value="opel">Manufacturas en textiles y cuero</option>
+  <option value="opel">Materiales y ensayos</option>
+  <option value="opel">Servicios Financieros</option>
+  <option value="opel">Tecnologias de transporte</option>
+  <option value="opel">Metalmecanico</option>
+  <option value="opel">Hoteleria, turismo y alimentos</option>
+</select> 
+<br><br><br>
+
+  Fecha Inicio:
+<input required type="date" name="fecha" min="2018-01-01"
+                                max="2018-12-31" step="2">
+
+  Fecha Fin:
+<input required type="date" name="fecha" min="2018-01-01"
+                                max="2018-12-31" step="2">
+<br><br><br>
+
+  Programa:
+<select required>
+  <option value="">Seleccione</option><br><br>
+  <option value="saab">Sistemas</option>
+  <option value="opel">Cocina</option>
+  <option value="audi">Enfermeria</option>
+  <option value="opel">Recursos Humanos</option>
+  <option value="opel">Contabilidad</option>
+  <option value="opel">Multimedia</option>
+  <option value="opel">Tecnico Programacion Software</option>
+  <option value="opel">ADSI</option>
+  <option value="opel">Seguridad Ocupacional</option>
+  <option value="opel">Atencion Integral</option>
+  <option value="opel">Mecanico industrial</option>
+  <option value="opel">Mantenimiento de computo</option>
+  <option value="opel">Carpinteria</option>
+</select> 
+<br><br><br>
+
+  <input type="submit" class="enjoy-css" value="Aceptar" style="width: 150px; height: 50px; left: 50px">
+  <a href="Gestionar fichas.html">
+  <input type="button" class="enjoy-css" value="Cancelar" style="width: 150px; height: 50px; left: 100px">
+
+</form>
+</center>
+</div>
+
+</body>
+</html>

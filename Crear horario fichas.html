@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Crear Horario Fichas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/icons/horario.png">
+<link rel="stylesheet" href="css/BOTON.CSS">
+<link rel="stylesheet" href="css/SEARCHBOX.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #05D954;}
+#main {margin-left: 120px}
+body {background-image:url(images/fondo.jpg); background-size: cover}
+@media only screen and (max-width: 600px) {#main {margin-left: }}
+#titulo{font-weight: bold;}
+</style>
+
+<body background="images/fondo.jpg" class="w3-border-green">
+
+<!-- NAVEGATION BAR -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!--IMAGEN-->
+  <a href="Bienvenida admin.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <i class="fa fa-home w3-xxlarge"></i>
+  <p>Inicio</p>
+</a>
+    <a href="Gestionar fichas.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file-text w3-xxlarge"></i>
+    <p>Gestionar Ficha</p>
+  </a>
+  <a href="gestionar instructor.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Gestionar Instructor</p>
+  </a>
+  <a href="ambientes gestion.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-refresh w3-xxlarge"></i>
+    <p>Gestionar Ambiente</p>
+  </a>
+  <a href="Gestionar horario.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>Gestionar Horario</p>
+  </a>
+</nav>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#gestionar fichas" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Fichas</a>
+    <a href="#gestionar instructor" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Instructor</a>
+    <a href="#gestionar ambientes" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Ambientes</a>
+    <a href="#gestionar horarios" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Horarios</a>
+  </div>
+</div>
+
+<div class="w3-padding-large" id="main">
+
+  <header class="w3-container w3-padding-32 w3-center w3-transparent" id="INSTRUCTOR">
+    <h1 id="titulo">CREAR HORARIO FICHAS</h1>
+  </header>
+
+<br><br>
+
+<center>
+  <form action="">
+<b>Ficha: </b>
+  <select>
+  <option value="Selec">Seleccione</option>
+  <option value="1566614">1566614</option>
+  <option value="1438303">1438303</option>
+  <option value="1688309">1688309</option>
+</select>
+
+<br><br>
+
+<b>Instructor: </b>
+  <select>
+    <option value="Seleccione">Seleccione</option>
+    <option value="Roger Londoño">Roger Londoño</option>
+    <option value="Miguel Lopez">Miguel Lopez</option>
+    <option value="Heran Rojas">Hernan Rojas</option>
+</select>
+
+<br><br>
+
+<b>Jornada: </b>
+  <select>
+    <option value="Seleccione">Seleccione</option>
+    <option value="Diurna">Diurna</option>
+    <option value="Nocturna">Nocturna</option>
+</select>
+
+<br><br>
+
+<b>Ambiente: </b>
+  <select>
+  <option value="Selec">Seleccione</option><br><br>
+  <option value="101">101</option>
+  <option value="102">102</option>
+  <option value="103">103</option>
+  <option value="201">201</option>
+  <option value="202">202</option>
+  <option value="203">203</option>
+  <option value="301">301</option>
+  <option value="302">302</option>
+  <option value="303">303</option>
+  <option value="401">401</option>
+  <option value="402">402</option>
+  <option value="403">403</option>
+</select>
+
+<br><br>
+
+<b>Trimestre: </b>
+  <select>
+  <option value="Selec">Seleccione</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+
+<br><br>
+
+<b>Programa: </b>
+  <select>
+    <option value="Selec">Seleccione</option>
+    <option value="ADSI">ADSI</option>
+    <option value="DIM">DIM</option>
+    <option value="TEA">TEA</option>
+</select>
+
+<br><br>
+
+<strong><a href="">*Plantilla de horarios</a></strong>
+
+<br><br><br><br>
+
+  <input type="button" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
+  <a href="Gestionar fichas.html">
+  <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
+
+
+</form>
+</div>
+</div>
+</center>
+</body>
+</html>
