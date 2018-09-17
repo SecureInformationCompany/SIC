@@ -32,7 +32,7 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
         <p>Inicio</p>
       </a>
       <a href="Gestionar fichas.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-file w3-xxlarge"></i>
+        <i class="fa fa-file-text w3-xxlarge"></i>
         <p>Gestionar Ficha</p>
       </a>
 
@@ -72,63 +72,62 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <center>
 <div class="w3-padding-large" id="main">
 
-    <div>
-      <b>Nombres:</b>
-  <input type="text" name="Primer Nombre" value=" ">
+	<form action="/action_page.php">
+Nombres:
+<input required type="text" name="Primer Nombre">
 
-  <b>Apellidos:</b>
-  <input type="text" name="Primer Apellido" value=" ">
+Apellidos:
+<input required type="text" name="Primer Apellido">
 
-<b>Tipo de Documento:</b>
-  <input type="button" value="Cedula de ciudadania" disabled style="background: #EF7317; width: 200px; color: black"/>
-  <br><br>
-
-<b>Número de Documento:</b>
-  <input type="button" value="123456789" disabled style="background: #EF7317; width: 200px; color: black"/>
-
-  <b>Correo Electrónico:</b>
-  <input type="text" name="numero de Documento" value=" ">
-
-  <b>Género:</b>
-  <input type="button" value="Masculino" disabled style="background: #EF7317; width: 170px; color: black"/>
-  <br><br>
-
-<b>Dirección:</b>
-  <input type="text" name="numero de Documento" value=" ">
-
-<b>Teléfono:</b>
-  <input type="text" name="numero de Documento" value=" ">
-
-  <b>Celular:</b>
-  <input type="text" name="numero de Documento" value=" "><br><br>
-
-<b>Estado:</b>
-  <select style="left:25%">
-  <option value="Selec">Seleccione</option><br><br>
-  <option value="saab">Activo</option>
-  <option value="opel">Retirado</option>
-  <option value="opel">Re Integro</option>
-</select>
-  
-  <b>Trabajo Antes Aquí:</b>
-  <select style="left:25%">
-  <option value="Selec">Seleccione</option><br><br>
-  <option value="saab">Si</option>
-  <option value="opel">No</option>
-</select><br><br>
-
-   <b>Novedades:</b><br>
-<form action="/action_page.php">
-  <textarea name="message" rows="3" cols="80" ></textarea>
-  <br><br>
-</form>
+Tipo de Documento:
+<input required type="button" value="Cedula de ciudadania" disabled style="background: #EF7317; width: 200px; color: black"/>
 <br><br>
 
-<form>
-  <input type="button" class="enjoy-css" value="EDITAR" style="width: 180px; height: 48px; left:-4%">
-<a href="Bienvenida admin.html">
-  <input type="button" class="enjoy-css" value="CANCELAR" style="width: 200px; height: 48px; left:5%">
+Número de Documento:
+<input required type="button" value="1234567890" disabled style="background: #EF7317; width: 200px; color: black"/>
+
+Correo Electrónico:
+<input required type="text" name="numero de Documento">
+
+<b>Género:</b>
+<input required type="button" value="Masculino" disabled style="background: #EF7317; width: 200px; color: black"/>
+<br><br>
+
+<b>Dirección:</b>
+<input required type="text" name="numero de Documento">
+
+<b>Teléfono:</b>
+<input required type="text" name="numero de Documento">
+
+<b>Celular:</b>
+<input required type="text" name="numero de Documento">
+<br><br>
+
+<b>Estado:</b>
+<select required style="left:25%">
+<option value="">Seleccione</option><br><br>
+<option value="saab">Activo</option>
+<option value="opel">Retirado</option>
+<option value="opel">Re Integro</option>
+</select>
+
+<b>Trabajo Antes Aquí:</b>
+<select required style="left:25%">
+<option value="">Seleccione</option><br><br>
+<option value="saab">Si</option>
+<option value="opel">No</option>
+</select><br><br>
+
+<b>Novedades:</b><br>
+<textarea required name="message" rows="3" cols="80" ></textarea>
+<br><br>
+<br><br>
+
+<input type="submit" class="enjoy-css" value="EDITAR" style="width: 180px; height: 48px; left:-4%">
+<a href="Gestionar instructor.html">
+<input type="button" class="enjoy-css" value="CANCELAR" style="width: 200px; height: 48px; left:5%">
 </form>
+
 
 </center>
 </div>

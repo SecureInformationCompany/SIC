@@ -65,7 +65,7 @@
 
      <br><br><br><br>
 
-     <form action="">
+ <form action="">
 
       Nombre:
     <input type="button" value="Roger" disabled style="background: #EF7317; width: 200px; color: black"/>
@@ -78,7 +78,8 @@
     <br><br>
 
       Tipo de documento:
-    <select name="tipodocumento">
+    <select required>
+      <option value="">Seleccione</option>
       <option value="Cedula de ciudadania">Cédula de ciudadania</option>
       <option value="Cedula de ciudadania">Cédula extranjera</option>
     </select>
@@ -86,20 +87,19 @@
     <br><br>
 
       Documento:
-    <input name="documento" type="text">
+    <input required name="documento" type="text">
 
-    <br><br>
-
-  </form>
-
-  <br><br>
+    <br><br><br><br>
 
 <a id="Plantilla" href="https://www.w3schools.com/html/">*Plantilla de horarios</a>
 
 <br><br><br><br>
 
-<input type="button" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
-<a href="Bienvenida admin.html">
+<input type="submit" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
+
+<a href="Editar horarios.html">
 <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
+  </form>
+
 </body>
 </html>

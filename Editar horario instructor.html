@@ -65,13 +65,13 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 
    <br><br><br>
 
-  <form action="">
+<form action="/action_page.php">
     Instructor:
-  <input type="button" value="Roger Londoño" disabled style="background: #EF7317; width: 120px; color: black"/>
+  <input required type="button" value="Roger Londoño" disabled style="background: #EF7317; width: 120px; color: black"/>
 
     Sede:
-  <select name="sede" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="sede" >
+    <option value="">Seleccione</option>
     <option value="Sede Colombia">Sede Colombia</option>
     <option value="Sede Ricaurte">Sede Ricaurte</option>
     <option value="Sede Restrepo">Sede Restrepo </option>
@@ -79,13 +79,12 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
   </select>
 
     Ficha:
-  <select name="ficha" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="ficha" >
+    <option value="">Seleccione</option>
     <option value="1566614">1566614</option>
     <option value="1438303">1438303</option>
     <option value="1688309">1688309</option>
   </select>
-  </form>
 
 <br><br>
 
@@ -94,16 +93,16 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br>
 
     Tipo de vinculación:
-  <select name="tipovinculacion" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="tipovinculacion" >
+    <option value="">Seleccione</option>
     <option value="Contrato a término indefinido">Contrato a término indefinido</option>
     <option value="Contrato de obra o labor">Contrato de obra o labor </option>
     <option value="Contrato de aprendizaje">Contrato de aprendizaje </option>
   </select>
 
     Especialidad:
-  <select name="especialidad" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="especialidad" >
+    <option value="">Seleccione</option>
     <option value="Ingeniero de sistemas">Ingeniero de sistemas</option>
     <option value="Tecnico en sistemas">Tecnico en sistemas</option>
   </select>
@@ -111,26 +110,25 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br>
 
     Horas presenciales:
-<input type="button" value="40" disabled style="background: #EF7317; width: 170px; color: black"/>
+<input required type="button" value="40" disabled style="background: #EF7317; width: 170px; color: black"/>
 
     Horas pendientes:
-<input type="button" value="0" disabled style="background: #EF7317; width: 170px; color: black"/>
+<input required type="button" value="0" disabled style="background: #EF7317; width: 170px; color: black"/>
 
 <br><br>
 
     Fecha de inicio:
-<input type="date" name="Fechainicio">
+<input required type="date" name="Fechainicio">
 
     Fecha de finalización:
-<input type="date" name="Fechafin">
-
-</form>
+<input required type="date" name="Fechafin">
 
 <br><br><br><br>
 
-<input type="button" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
-<a href="Bienvenida admin.html">
+<input type="submit" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
+<a href="Editar horarios.html">
 <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
+</form>
 
 </body>
 </html>
