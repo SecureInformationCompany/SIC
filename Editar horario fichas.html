@@ -66,10 +66,10 @@ textarea{resize: none;}
 
   <br><br><br><br>
 
-  <form action="">
+<form action="/action_page.php">
     Instructor:
-  <select name="instructor">
-    <option value="Seleccione">Seleccione</option>
+  <select required name="instructor">
+    <option value="">Seleccione</option>
     <option value="Roger Londoño">Roger Londoño</option>
     <option value="Miguel Lopez">Miguel Lopez</option>
     <option value="Heran Rojas">Hernan Rojas</option>
@@ -84,8 +84,8 @@ textarea{resize: none;}
  <br><br><br>
 
  Ambiente:
-<select name="ambiente" >
- <option value="Seleccione">Seleccione</option>
+<select required name="ambiente" >
+ <option value="">Seleccione</option>
  <option value="101">101</option>
  <option value="102">102</option>
  <option value="103">103</option>
@@ -101,8 +101,8 @@ textarea{resize: none;}
 </select>
 
  Trimestre:
-<select name="trimestre">
- <option value="Seleccione">Seleccione</option>
+<select required name="trimestre">
+ <option value="">Seleccione</option>
  <option value="1">1</option>
  <option value="2">2</option>
  <option value="3">3</option>
@@ -120,38 +120,36 @@ textarea{resize: none;}
 
 Programa:
 <br><br>
-<textarea rows="4" cols="50" name="programa"></textarea>
+<textarea required rows="4" cols="50" name="programa"></textarea>
 
 <br><br><br>
 
 Competencias:
 <br><br>
-<textarea rows="4" cols="50" name="Competencias"></textarea>
+<textarea required rows="4" cols="50" name="Competencias"></textarea>
 
 <br><br>
 
 Actividades:<br><br>
-<textarea rows="4" cols="50" name="Actividades"></textarea>
+<textarea required rows="4" cols="50" name="Actividades"></textarea>
 
 <br><br>
 
 Fases:
 <br><br>
-<textarea rows="4" cols="50" name="Fases"></textarea>
+<textarea required rows="4" cols="50" name="Fases"></textarea>
 
 <br><br>
 
 Resultado:<br><br>
-<textarea rows="4" cols="50" name="Resultado"></textarea>
-
-</form>
+<textarea required rows="4" cols="50" name="Resultado"></textarea>
 
 <br><br><br>
 
-<input type="button" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
-<a href="Bienvenida admin.html">
+<input type="submit" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
+<a href="Editar horarios.html">
 <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
-
+</form>
 
 </body>
 </html>

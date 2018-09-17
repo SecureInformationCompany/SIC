@@ -30,7 +30,7 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
   <p>Inicio</p>
   </a>
     <a href="Gestionar fichas.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-file w3-xxlarge"></i>
+    <i class="fa fa-file-text w3-xxlarge"></i>
     <p>Gestionar Ficha</p>
   </a>
   <a href="gestionar instructor.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -67,30 +67,27 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br><br>
 
 <center>
-  <form action="">
+  <form action="/action_page.php">
     Instructor:
-  <select name="instructor">
-    <option value="Seleccione">Seleccione</option>
+  <select required name="instructor">
+    <option value="">Seleccione</option>
     <option value="Roger Londoño">Roger Londoño</option>
     <option value="Miguel Lopez">Miguel Lopez</option>
     <option value="Heran Rojas">Hernan Rojas</option>
   </select>
 
-
-
   Sede:
-  <select name="sede" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="sede" >
+    <option value="">Seleccione</option>
     <option value="Sede Colombia">Sede Colombia</option>
     <option value="Sede Ricaurte">Sede Ricaurte</option>
     <option value="Sede Restrepo">Sede Restrepo </option>
     <option value="Sena CEET">Sena CEET</option>
   </select>
 
-
   Ficha:
-  <select name="ficha" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="ficha" >
+    <option value="">Seleccione</option>
     <option value="1566614">1566614</option>
     <option value="1438303">1438303</option>
     <option value="1688309">1688309</option>
@@ -104,16 +101,16 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
   <br><br><br>
 
   Tipo de vinculación:
-  <select name="tipovinculacion" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="tipovinculacion" >
+    <option value="">Seleccione</option>
     <option value="Contrato a término indefinido">Contrato a término indefinido</option>
     <option value="Contrato de obra o labor">Contrato de obra o labor </option>
     <option value="Contrato de aprendizaje">Contrato de aprendizaje </option>
   </select>
 
   Especialidad:
-  <select name="especialidad" >
-    <option value="Seleccione">Seleccione</option>
+  <select required name="especialidad" >
+    <option value="">Seleccione</option>
     <option value="Ingeniero de sistemas">Ingeniero de sistemas</option>
     <option value="Tecnico en sistemas">Tecnico en sistemas</option>
   </select>
@@ -121,26 +118,25 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 
 <br><br><br>
 
-
   Horas presenciales semana:
-<input type="text" disabled name="horaspresencialessemanal">
+<input required type="text" name="horaspresencialessemanal">
 
 
   Horas pendientes semana:
-<input type="text" disabled name="horaspendientessemanal">
+<input required type="text" name="horaspendientessemanal">
 
 <br><br><br>
 
   Fecha de inicio:
-<input type="date" name="fechainicio">
+<input required type="date" name="fechainicio">
 
   Fecha de finalización:
-<input type="date" name="fechafin">
+<input required type="date" name="fechafin">
 
 <br><br><br>
 
-  <input type="button" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
-  <a href="Bienvenida admin.html">
+  <input type="submit" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
+  <a href="Creacion de horarios.html">
   <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
 </form>
 </center>

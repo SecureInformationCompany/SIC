@@ -30,7 +30,7 @@
     <p>Inicio</p>
     </a>
      <a href="Gestionar fichas.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-file w3-xxlarge"></i>
+    <i class="fa fa-file-text w3-xxlarge"></i>
     <p>Gestionar Ficha</p>
   </a>
   <a href="gestionar instructor.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -65,20 +65,20 @@
 
 <br><br><br><br>
 
-     <form action="/action_page.php">
+    <form action="/action_page.php">
        Nombre:
-       <input type="text" name="nombre">
+    <input required type="text" name="nombre">
 
     <br><br>
 
-        Apellido:
-    <input type="text" name="apellido">
+      Apellido:
+    <input required type="text" name="apellido">
 
     <br><br>
 
   Tipo de documento:
-    <select name="tipodocumento" >
-      <option value="Seleccione">Seleccione</option>
+    <select required name="tipodocumento" >
+      <option value="">Seleccione</option>
       <option value="Cedula de ciudadania">Cedula de ciudadania</option>
       <option value="Cedula extranjera">Cedula extranjera</option>
     </select>
@@ -86,25 +86,23 @@
     <br><br>
 
   Documento:
-    <input type="text" name="documento">
+    <input required type="text" name="documento">
 
     <br><br>
 
      Horas presenciales:
-    <input type="text" name="horaspresencialessemanal" disabled>
+    <input required type="text" name="horaspresencialessemanal">
 
     <br><br>
 
 <a id="Plantilla" href="https://www.w3schools.com/html/">*Plantilla de horarios</a>
 
-</form>
-
 <br><br><br>
 
-<input type="button" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
-<a href="Bienvenida admin.html">
+<input type="submit" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
+<a href="Creacion de horarios.html">
 <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
-
+</form>
 
 </body>
 </html>

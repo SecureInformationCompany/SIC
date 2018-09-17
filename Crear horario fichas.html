@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="images/icons/horario.png">
-<link rel="stylesheet" href="css/BOTON.CSS">
+<link href="css/BOTON.CSS" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/SEARCHBOX.css">
 
 <style>
@@ -68,9 +68,9 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 
 <center>
   <form action="">
-<b>Ficha: </b>
-  <select>
-  <option value="Selec">Seleccione</option>
+  Ficha:
+<select required>
+  <option value="">Seleccione</option>
   <option value="1566614">1566614</option>
   <option value="1438303">1438303</option>
   <option value="1688309">1688309</option>
@@ -78,9 +78,9 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 
 <br><br>
 
-<b>Instructor: </b>
-  <select>
-    <option value="Seleccione">Seleccione</option>
+  Instructor:
+<select required>
+    <option value="">Seleccione</option>
     <option value="Roger Londoño">Roger Londoño</option>
     <option value="Miguel Lopez">Miguel Lopez</option>
     <option value="Heran Rojas">Hernan Rojas</option>
@@ -89,8 +89,8 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br>
 
 <b>Jornada: </b>
-  <select>
-    <option value="Seleccione">Seleccione</option>
+  <select required>
+    <option value="">Seleccione</option>
     <option value="Diurna">Diurna</option>
     <option value="Nocturna">Nocturna</option>
 </select>
@@ -98,8 +98,8 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br>
 
 <b>Ambiente: </b>
-  <select>
-  <option value="Selec">Seleccione</option><br><br>
+  <select required>
+  <option value="">Seleccione</option><br><br>
   <option value="101">101</option>
   <option value="102">102</option>
   <option value="103">103</option>
@@ -117,8 +117,8 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br>
 
 <b>Trimestre: </b>
-  <select>
-  <option value="Selec">Seleccione</option>
+  <select required>
+  <option value="">Seleccione</option>
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
@@ -130,8 +130,8 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br>
 
 <b>Programa: </b>
-  <select>
-    <option value="Selec">Seleccione</option>
+  <select required>
+    <option value="">Seleccione</option>
     <option value="ADSI">ADSI</option>
     <option value="DIM">DIM</option>
     <option value="TEA">TEA</option>
@@ -143,8 +143,8 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 
 <br><br><br><br>
 
-  <input type="button" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
-  <a href="Gestionar fichas.html">
+  <input type="submit" class="enjoy-css" value="Aceptar" style="width: 200px; height: 50px; left:-1%">
+  <a href="Creacion de horarios.html">
   <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
 
 
