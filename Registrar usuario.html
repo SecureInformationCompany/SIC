@@ -43,34 +43,52 @@
 				</div>
 
 				<form class="login100-form validate-form">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Tipo de usuario es requerido">
+						<span class="label-input100">Tipo de usuario</span>
+						<br>
+						<input type="radio" name="usuario" value="administrador">Administrador<br>
+						<input type="radio" name="usuario" value="instructor">Instructor<br>
+						<input type="radio" name="usuario" value="logistica">Logística<br>
+						<span class="focus-input100"></span>
+					</div>
+
+				<form class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Nombre de usuario es requerido">
 						<span class="label-input100">Nombre de usuario</span>
-						<input class="input100" type="text" name="username" placeholder="Introducir usuario">
+						<input class="input100" type="text" name="usuario" placeholder="Introducir usuario">
 						<span class="focus-input100"></span>
 					</div>
 
 					<form class="login100-form validate-form">
-						<div class="wrap-input100 validate-input m-b-26" data-validate="Los nombres son requeridos">
-							<span class="label-input100">Nombres</span>
-							<input class="input100" type="text" name="names" placeholder="Introducir nombres">
+						<div class="wrap-input100 validate-input m-b-26" data-validate="Nombre es requerido">
+							<span class="label-input100">Nombre</span>
+							<input class="input100" type="text" name="nombre" placeholder="Introducir nombre">
 							<span class="focus-input100"></span>
 						</div>
 
+						<form class="login100-form validate-form">
+							<div class="wrap-input100 validate-input m-b-26" data-validate="Apellido es requerido">
+								<span class="label-input100">Apellido</span>
+								<input class="input100" type="text" name="nombre" placeholder="Introducir apellido">
+								<span class="focus-input100"></span>
+							</div>
+
+
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "La contraseña es requerida">
 						<span class="label-input100">Contraseña</span>
-						<input class="input100" type="password" name="pass" placeholder="Introducir contraseña">
+						<input class="input100" type="password" name="clave" placeholder="Introducir contraseña">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Introduzca de nuevo la contraseña">
 						<span class="label-input100">Confirmar contraseña</span>
-						<input class="input100" type="password1" name="pass" placeholder="Confirmar contraseña">
+						<input class="input100" type="password1" name="clave" placeholder="Confirmar contraseña">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "La contraseña de admin es requerida">
 						<span class="label-input100">Contraseña de admin</span>
-						<input class="input100" type="adminpassword" name="pass" placeholder="Introducir contraseña de administrador">
+						<input class="input100" type="adminpassword" name="clave" placeholder="Introducir contraseña de administrador">
 						<span class="focus-input100"></span>
 					</div>
 
