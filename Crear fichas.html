@@ -64,70 +64,69 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 </div>
 
 <center><div>
-<form action="">
+<form action="Crear fichas.php" method="post" name="form">
   Número de Ficha:
-<input required type="text" name="Número de Ficha">
+<input required type="text" name="numero_ficha">
 
   Jornada:
-<select required>
+<select required name="jornada">
   <option value="">Seleccione</option><br><br>
-  <option value="saab">Diurna</option>
-  <option value="opel">Nocturna</option>
-  <option value="audi">Fines de semana</option>
+  <option>Diurna</option>
+  <option>Nocturna</option>
+  <option>Fines de semana</option>
 </select>
 <br><br><br>
 
   Cantidad Aprendices:
-<input required type="text" name="Cantidad de Aprendices">
+<input required type="text" name="cantidad_aprendices">
 
   Sede:
-<select required>
+<select required name="sede">
   <option value="">Seleccione</option><br><br>
-  <option value="saab">Diseño y Metrologia</option>
-  <option value="opel">Ceet</option>
-  <option value="audi">Talento humano en salud</option>
-  <option value="opel">Gestion Administrativa</option>
-  <option value="opel">Gestion de mercados,logistica y tic's</option>
-  <option value="opel">Gestion industrial</option>
-  <option value="opel">Formacion en actividad fisica y cultura</option>
-  <option value="opel">Manufacturas en textiles y cuero</option>
-  <option value="opel">Materiales y ensayos</option>
-  <option value="opel">Servicios Financieros</option>
-  <option value="opel">Tecnologias de transporte</option>
-  <option value="opel">Metalmecanico</option>
-  <option value="opel">Hoteleria, turismo y alimentos</option>
+  <option>Diseño y Metrologia</option>
+  <option>Ceet</option>
+  <option>Talento humano en salud</option>
+  <option>Gestion Administrativa</option>
+  <option>Gestion de mercados,logistica y tic's</option>
+  <option>Gestion industrial</option>
+  <option>Formacion en actividad fisica y cultura</option>
+  <option>Manufacturas en textiles y cuero</option>
+  <option>Materiales y ensayos</option>
+  <option>Servicios Financieros</option>
+  <option>Tecnologias de transporte</option>
+  <option>Metalmecanico</option>
+  <option>Hoteleria, turismo y alimentos</option>
 </select>
 <br><br><br>
 
   Fecha Inicio:
-<input required type="date" name="fecha" min="2018-01-01"
+<input required type="date" name="fecha_inicio" min="2018-01-01"
                                 max="2018-12-31" step="2">
 
   Fecha Fin:
-<input required type="date" name="fecha" min="2018-01-01"
+<input required type="date" name="fecha_fin" min="2018-01-01"
                                 max="2018-12-31" step="2">
 <br><br><br>
 
   Programa:
-<select required>
+<select required name="programa">
   <option value="">Seleccione</option><br><br>
-  <option value="saab">Sistemas</option>
-  <option value="opel">Cocina</option>
-  <option value="audi">Enfermeria</option>
-  <option value="opel">Recursos Humanos</option>
-  <option value="opel">Contabilidad</option>
-  <option value="opel">Multimedia</option>
-  <option value="opel">Tecnico Programacion Software</option>
-  <option value="opel">ADSI</option>
-  <option value="opel">Seguridad Ocupacional</option>
-  <option value="opel">Atencion Integral</option>
-  <option value="opel">Mecanico industrial</option>
-  <option value="opel">Mantenimiento de computo</option>
-  <option value="opel">Carpinteria</option>
+  <option>Sistemas</option>
+  <option>Cocina</option>
+  <option>Enfermeria</option>
+  <option>Recursos Humanos</option>
+  <option>Contabilidad</option>
+  <option>Multimedia</option>
+  <option>Tecnico Programacion Software</option>
+  <option>ADSI</option>
+  <option>Seguridad Ocupacional</option>
+  <option>Atencion Integral</option>
+  <option>Mecanico industrial</option>
+  <option>Mantenimiento de computo</option>
+  <option>Carpinteria</option>
 </select>
 <br><br><br>
 
-  <a href="Exito.html">
   <input type="submit" class="enjoy-css" value="Aceptar" style="width: 150px; height: 50px; left: 50px">
 
   <a href="Gestionar fichas.html">

@@ -2,13 +2,14 @@
 <html>
 <title>Crear Horario Fichas</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="images/icons/horario.png">
 <link href="css/BOTON.CSS" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/SEARCHBOX.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -67,74 +68,75 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
 <br><br>
 
 <center>
-  <form action="">
+  <form action="Crear horario fichas.php">
   Ficha:
-<select required>
+<select required name="ficha">
   <option value="">Seleccione</option>
-  <option value="1566614">1566614</option>
-  <option value="1438303">1438303</option>
-  <option value="1688309">1688309</option>
+  <option>1566614</option>
+  <option>1438303</option>
+  <option>1688309</option>
 </select>
 
 <br><br>
 
   Instructor:
-<select required>
+<select required name="instructor">
     <option value="">Seleccione</option>
-    <option value="Roger Londoño">Roger Londoño</option>
-    <option value="Miguel Lopez">Miguel Lopez</option>
-    <option value="Heran Rojas">Hernan Rojas</option>
+    <option>Roger Londoño</option>
+    <option>Miguel Lopez</option>
+    <option>Hernan Rojas</option>
 </select>
 
 <br><br>
 
 <b>Jornada: </b>
-  <select required>
+  <select required name="jornada">
     <option value="">Seleccione</option>
-    <option value="Diurna">Diurna</option>
-    <option value="Nocturna">Nocturna</option>
+    <option>Diurna</option>
+    <option>Nocturna</option>
+    <option>Fines de semana</option>
 </select>
 
 <br><br>
 
 <b>Ambiente: </b>
-  <select required>
+  <select required name="ambiente">
   <option value="">Seleccione</option><br><br>
-  <option value="101">101</option>
-  <option value="102">102</option>
-  <option value="103">103</option>
-  <option value="201">201</option>
-  <option value="202">202</option>
-  <option value="203">203</option>
-  <option value="301">301</option>
-  <option value="302">302</option>
-  <option value="303">303</option>
-  <option value="401">401</option>
-  <option value="402">402</option>
-  <option value="403">403</option>
+  <option>101</option>
+  <option>102</option>
+  <option>103</option>
+  <option>201</option>
+  <option>202</option>
+  <option>203</option>
+  <option>301</option>
+  <option>302</option>
+  <option>303</option>
+  <option>401</option>
+  <option>402</option>
+  <option>403</option>
 </select>
 
 <br><br>
 
 <b>Trimestre: </b>
-  <select required>
+  <select required name="trimestre">
   <option value="">Seleccione</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
 </select>
 
 <br><br>
 
 <b>Programa: </b>
-  <select required>
+  <select required name="programa">
     <option value="">Seleccione</option>
-    <option value="ADSI">ADSI</option>
-    <option value="DIM">DIM</option>
-    <option value="TEA">TEA</option>
+    <option>ADSI</option>
+    <option>DIM</option>
+    <option>TEA</option>
 </select>
 
 <br><br>
@@ -147,6 +149,8 @@ body {background-image:url(images/fondo.jpg); background-size: cover}
   <a href="Creacion de horarios.html">
   <input type="button" class="enjoy-css" value="Cancelar" style="width: 200px; height: 50px; left:1%">
 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </form>
 </div>
